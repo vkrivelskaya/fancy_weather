@@ -236,7 +236,7 @@ export class Application {
         ].forEach(({ iconElement, weather }) => {
             const iconFile = weatherIcons[weather.icon];
 
-            iconElement.style.background = `center no-repeat url("../assets/images/weather_icons/${iconFile}")`;
+            iconElement.style.background = `center no-repeat url("assets/images/weather_icons/${iconFile}")`;
             iconElement.style.backgroundSize = 'cover';
         });
     }
