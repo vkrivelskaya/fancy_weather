@@ -13,9 +13,9 @@ export class Time {
     }
 
     async loadLocationTimezone() {
-        let response = await fetch(`${requests.timeZone}/timezoneJSON?lat=${this.latitude}&lng=${this.longitude}&username=geoloky`);
+        let response = await fetch(`${requests.timeZone}&lat=${this.latitude}&long=${this.longitude}`);
         response = await response.json();
-        this.timeZone = response.timezoneId;
+        this.timeZone = response.timezone;
     }
 
     getTimeZone() {
